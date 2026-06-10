@@ -25,3 +25,109 @@ h1{
 .btn:hover{
     transform: scale(1.1);
 }
+.hero{
+
+    background-image: url("../img/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.hero::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content{
+
+    position: relative;
+
+    z-index: 1;
+}
+.menu-lateral{
+
+    position: fixed;
+
+    top: 0px;
+
+    left: 15px;
+
+    z-index: 1000;
+
+    width: 220px;
+}
+
+.menu-lateral .btn{
+
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+.btn-terran{
+
+    background-color: #007bff;
+
+    color: white;
+    border: 3px solid white;
+}
+
+.btn-zerg{
+
+    background-color: purple;
+
+    color: white;
+    border: 3px solid white;
+}
+
+.btn-protoss{
+
+    background-color: #00e5ff;
+
+    color: black;
+    border: 3px solid white;
+}
+
+.btn-inicio{
+
+    background-color: #444;
+
+    color: white;
+}
+@media (max-width: 768px){
+
+    .menu-lateral{
+
+        position: static;
+
+        width: 100%;
+
+        margin-bottom: 20px;
+    }
+
+}
