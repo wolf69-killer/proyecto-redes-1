@@ -1,1 +1,1 @@
-console.log("Proyecto iniciado");
+console.log("StarCraft II cargado correctamente");
